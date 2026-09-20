@@ -556,3 +556,59 @@ section {
 
 /* NOTE: Form validation aur scroll-top/menu toggle JS logic
    Din 4 mein script.js file mein likha jayega. */
+
+/* ==========================================================
+   PROJECT GALLERY PAGES (project1.html, project2.html, project3.html)
+   ========================================================== */
+.gallery {
+  padding: 4rem 0;
+}
+
+.gallery__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.gallery__back:hover {
+  text-decoration: underline;
+}
+
+.gallery__title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery__desc {
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery__grid img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
