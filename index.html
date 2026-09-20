@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alina Mahnoor | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Alina Mahnoor, a web developer specializing in building responsive, modern websites.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Alina Mahnoor<span>.</span></a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hi, I'm</p>
+          <h1 class="hero__name">Alina Mahnoor</h1>
+          <p class="hero__tagline">I build fast, responsive websites that turn ideas into working products.</p>
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+        </div>
+        <div class="hero__image">
+          <img src="assets/images/profile.jpg" alt="Photo of Your Name">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__content">
+          <p class="about__text">
+            I'm Alina Mahnoor, a web developer who enjoys turning ideas into clean, functional websites. I work primarily with HTML, CSS, JavaScript, and React, and I'm comfortable handling both front-end design and the logic behind it. Some of my recent work includes Zimal Footwear, a React-based e-commerce platform with a full admin console, and ShopIQ, a multi-category shopping site built with HTML, CSS, JavaScript, and Bootstrap. I'm currently doing my internship and sharpening my skills in responsive design and JavaScript, with a growing interest in Python. I'm looking for opportunities — freelance projects, internships, or full-time roles — where I can keep learning and build products that make a real difference.
+          <a href="assets/YourName-CV.pdf" class="btn btn--outline" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+
+          <div class="skill__card">
+            <i class="fa-brands fa-html5 skill__icon"></i>
+            <h3 class="skill__name">HTML5</h3>
+            <div class="skill__bar"><span style="width: 90%;"></span></div>
+          </div>
+
+          <div class="skill__card">
+            <i class="fa-brands fa-css3-alt skill__icon"></i>
+            <h3 class="skill__name">CSS3</h3>
+            <div class="skill__bar"><span style="width: 85%;"></span></div>
+          </div>
+
+          <div class="skill__card">
+            <i class="fa-brands fa-js skill__icon"></i>
+            <h3 class="skill__name">JavaScript</h3>
+            <div class="skill__bar"><span style="width: 75%;"></span></div>
+          </div>
+
+          <div class="skill__card">
+            <i class="fa-brands fa-git-alt skill__icon"></i>
+            <h3 class="skill__name">Git & GitHub</h3>
+            <div class="skill__bar"><span style="width: 70%;"></span></div>
+          </div>
+
+          <div class="skill__card">
+            <i class="fa-solid fa-table-cells-large skill__icon"></i>
+            <h3 class="skill__name">Responsive Design</h3>
+            <div class="skill__bar"><span style="width: 80%;"></span></div>
+          </div>
+
+          <div class="skill__card">
+            <i class="fa-brands fa-figma skill__icon"></i>
+            <h3 class="skill__name">Figma</h3>
+            <div class="skill__bar"><span style="width: 60%;"></span></div>
+          </div>
+          <div class="skill__card">
+  <i class="fa-brands fa-python skill__icon"></i>
+  <h3 class="skill__name">Python</h3>
+  <div class="skill__bar"><span style="width: 65%;"></span></div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+
+          <article class="project__card">
+            <img src="images/project1.png" alt="Screenshot of Project One" class="project__img">
+            <div class="project__info">
+              <h3 class="project__title">Zimal Footwear</h3>
+              <p class="project__desc">A full‑featured e‑commerce platform for footwear, built with React. Includes separate collections for ladies, gents, and kids, along with an admin console to manage products and orders.</p>
+              <a href="#" class="project__link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+          <article class="project__card">
+            <img src="images/project2.png" alt="Screenshot of Project Two" class="project__img">
+            <div class="project__info">
+              <h3 class="project__title">ShopIQ</h3>
+              <p class="project__desc">A multi‑category e‑commerce website built with HTML, CSS, JavaScript, and Bootstrap. Features product listings across books, kitchen essentials, and electronics.</p>
+              <a href="#" class="project__link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+          <article class="project__card">
+            <img src="images/project3.png" alt="Screenshot of Project Three" class="project__img">
+            <div class="project__info">
+              <h3 class="project__title">Smart Traffic Signal System</h3>
+              <p class="project__desc">Developed a 4‑way traffic intersection simulation with adaptive signal‑timing (Python, Pygame) and implemented a YOLOv8‑based vehicle‑detection system to adjust green‑signal duration dynamically.</p>
+              <a href="#" class="project__link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+      <div class="container contact__container">
+        <div class="contact__info">
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="contact__text">Have a project in mind or just want to say hi? My inbox is open.</p>
+          <a href="mailto:alinamahnoor59@gmail.com" class="contact__email"><i class="fa-solid fa-envelope"></i> alinamahnoor59@gmail.com</a>
+
+          <div class="contact__socials">
+            <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <span class="form__error" id="name-error"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <span class="form__error" id="email-error"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form__error" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__success" id="form-success">Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; <span id="year"></span> Alina Mahnoor All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
