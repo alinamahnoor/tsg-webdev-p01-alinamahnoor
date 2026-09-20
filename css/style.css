@@ -6,13 +6,13 @@
 
 :root {
   /* Colors */
-  --color-bg: #0B0E14;
-  --color-bg-alt: #11151F;
-  --color-text: #E7E9EE;
-  --color-text-muted: #8B93A7;
-  --color-accent: #5EEAD4;
-  --color-accent-alt: #FBBF24;
-  --color-border: #1F2530;
+  --color-bg: #0A0F24;
+  --color-bg-alt: #101736;
+  --color-text: #E9EAF2;
+  --color-text-muted: #9AA1BD;
+  --color-accent: #C9A227;
+  --color-accent-alt: #E4C158;
+  --color-border: #232C4F;
 
   /* Fonts */
   --font-heading: 'Sora', sans-serif;
@@ -67,7 +67,22 @@ section {
 .section__title {
   font-family: var(--font-heading);
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 999px;
 }
 
 /* Temporary basic button so links are visible/clickable while
@@ -187,8 +202,8 @@ section {
 }
 
 .hero__image img {
-  border-radius: 16px;
-  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background-color: var(--color-bg-alt);
@@ -404,6 +419,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem;
 }
 
 .form__group {
@@ -419,10 +438,10 @@ section {
 
 .form__group input,
 .form__group textarea {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  padding: 0.8rem 1.1rem;
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: 0.95rem;
