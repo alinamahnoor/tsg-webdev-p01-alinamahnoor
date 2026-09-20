@@ -6,13 +6,13 @@
 
 :root {
   /* Colors */
-  --color-bg: #0A0F24;
-  --color-bg-alt: #101736;
-  --color-text: #E9EAF2;
-  --color-text-muted: #9AA1BD;
-  --color-accent: #C9A227;
-  --color-accent-alt: #E4C158;
-  --color-border: #232C4F;
+  --color-bg: #080B18;
+  --color-bg-alt: #0E1428;
+  --color-text: #EDEEF4;
+  --color-text-muted: #9198B5;
+  --color-accent: #C99A3E;
+  --color-accent-alt: #D9AE5C;
+  --color-border: #1C2340;
 
   /* Fonts */
   --font-heading: 'Sora', sans-serif;
